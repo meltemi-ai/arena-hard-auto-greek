@@ -31,6 +31,7 @@ model_list:
   - command-r
   - command-rplus
   - gemma2-9b-it
-  - mistral-large-24.02
+  - mixtral-8x7b-instruct-v0.1
+  - mistral-7b-instruct-v0.2
   - gpt-4o
   - meltemi-instruct-7b-v1.5-orpo
