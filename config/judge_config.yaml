@@ -35,3 +35,4 @@ model_list:
   - mistral-7b-instruct-v0.2
   - gpt-4o
   - meltemi-instruct-7b-v1.5-orpo
+  - krikri-annealing-dpo-mixed-run1
