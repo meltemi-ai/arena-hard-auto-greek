@@ -8,17 +8,17 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - krikri-annealing-dpo-mixed-run1
-#  - claude-3.5-sonnet-v2
-#  - aya-expanse-8b
-#  - llama-3.1-70b
-#  - llama-3.1-8b
-#  - command-r
-#  - command-rplus
-#  - gemma2-9b-it
-#  - mixtral-8x7b-instruct-v0.1
-#  - mistral-7b-instruct-v0.2
-#  - gpt-4o
-#  - meltemi-instruct-7b-v1.5-orpo
+  - claude-3.5-sonnet-v2
+  - aya-expanse-8b
+  - llama-3.1-70b
+  - llama-3.1-8b
+  - command-r
+  - command-rplus
+  - gemma2-9b-it
+  - mixtral-8x7b-instruct-v0.1
+  - mistral-7b-instruct-v0.2
+  - gpt-4o
+  - meltemi-instruct-7b-v1.5-orpo
 
 #  - gpt-4o-mini # DONE
+#  - krikri-annealing-dpo-mixed-run1 # DONE

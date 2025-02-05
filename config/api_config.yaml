@@ -15,7 +15,7 @@ claude-3.5-sonnet-v2:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 4
+    parallel: 6
 
 gpt-4o-mini:
     model_name: gpt-4o-mini
@@ -31,7 +31,7 @@ aya-expanse-8b:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 1
+    parallel: 6
 
 llama-3.1-70b:
     model_name: llama-3.1-70b
@@ -39,7 +39,7 @@ llama-3.1-70b:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 1
+    parallel: 6
 
 llama-3.1-8b:
     model_name: llama-3.1-8b
@@ -47,7 +47,7 @@ llama-3.1-8b:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 1
+    parallel: 6
 
 command-r:
     model_name: command-r
@@ -55,7 +55,7 @@ command-r:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 1
+    parallel: 6
 
 command-rplus:
     model_name: command-rplus
@@ -63,7 +63,7 @@ command-rplus:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 1
+    parallel: 6
 
 gemma2-9b-it:
     model_name: gemma2-9b-it
@@ -79,7 +79,7 @@ mixtral-8x7b-instruct-v0.1:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 1
+    parallel: 6
 
 mistral-7b-instruct-v0.2:
     model_name: mistral-7b-instruct-v0.2
