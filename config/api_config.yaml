@@ -15,7 +15,7 @@ claude-3.5-sonnet-v2:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
     api_type: openai
-    parallel: 6
+    parallel: 5
 
 gpt-4o-mini:
     model_name: gpt-4o-mini

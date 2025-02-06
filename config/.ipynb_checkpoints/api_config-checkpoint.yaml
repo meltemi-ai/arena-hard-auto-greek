@@ -1,0 +1,114 @@
+# name: str
+#     model_name: str
+#     endpoints: default to null
+#         - api_base: str
+#           api_key: str
+#           api_version: str optional (only for azure)
+#     api_type: str
+#     tokenizer: str optional (to optimize token limits)
+#     parallel: int
+#     system_prompt: str optional (add system instruction when generating model answer)
+
+claude-3.5-sonnet-v2:
+    model_name: claude-3.5-sonnet-v2
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 6
+
+gpt-4o-mini:
+    model_name: gpt-4o-mini
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 1
+
+aya-expanse-8b:
+    model_name: aya-expanse-8b
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 6
+
+llama-3.1-70b:
+    model_name: llama-3.1-70b
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 6
+
+llama-3.1-8b:
+    model_name: llama-3.1-8b
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 6
+
+command-r:
+    model_name: command-r
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 6
+
+command-rplus:
+    model_name: command-rplus
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 6
+
+gemma2-9b-it:
+    model_name: gemma2-9b-it
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 1
+
+mixtral-8x7b-instruct-v0.1:
+    model_name: mixtral-8x7b-instruct-v0.1
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 6
+
+mistral-7b-instruct-v0.2:
+    model_name: mistral-7b-instruct-v0.2
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 1
+
+gpt-4o:
+    model_name: gpt-4o
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 1
+
+meltemi-instruct-7b-v1.5-orpo:
+    model_name: meltemi-instruct-7b-v1.5-orpo
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: sk-_d64WT1Bvhqy3onpa3S7Cg
+    api_type: openai
+    parallel: 1
+
+krikri-annealing-dpo-mixed-run1:
+    model_name: krikri-annealing-dpo-mixed-run1
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 8
