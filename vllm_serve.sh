@@ -11,8 +11,10 @@ BASE_MODEL_PATH="/opt/dlami/nvme/models"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-run4"
 #MODEL_PATH="$BASE_MODEL_PATH/meltemi-annealing-sft-run5"
 #MODEL_NAME="meltemi-annealing-sft-run5"
-MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-epoch-1"
-MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-epoch-1-run4"
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-epoch-1"
+#MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-epoch-1-run4"
+MODEL_PATH="google/gemma-2-27b-it"
+MODEL_NAME="gemma-2-27b-it"
 
 NUM_GPUS=4
 MAX_MODEL_LEN=8192
@@ -24,8 +26,8 @@ vllm serve $MODEL_PATH \
   --enforce-eager \
   --dtype 'bfloat16' \
   --gpu_memory_utilization 0.94 \
-  --api-key token-abc123
-#  --max-model-len $MAX_MODEL_LEN
-#  --download-dir $CACHE_DIR
+  --api-key token-abc123 \
+  --download-dir $CACHE_DIR
   
+#  --download-dir $CACHE_DIR
 #  --max-model-len $MAX_MODEL_LEN
