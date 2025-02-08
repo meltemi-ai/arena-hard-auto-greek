@@ -34,8 +34,6 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 model_list:
   - krikri-annealing-sft-stage2-dpo_min-length-norm-run4
   - krikri-annealing-sft-stage2-dpo_max-length-norm-run4
-  - krikri-annealing-sft-stage2-dpo_min-epoch-1-run4
-  - krikri-annealing-sft-stage2-dpo_min-run4
   - krikri-annealing-sft-mixed-run1
   - krikri-annealing-sft-stage2-run4
   - krikri-annealing-sft-stage2-dpo_max-epoch-1-run4
@@ -56,3 +54,5 @@ model_list:
 
 #  - gpt-4o
 #  - meltemi-annealing-sft-run5
+#  - krikri-annealing-sft-stage2-dpo_min-epoch-1-run4
+#  - krikri-annealing-sft-stage2-dpo_min-run4

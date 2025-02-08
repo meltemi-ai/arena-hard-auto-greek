@@ -95,7 +95,7 @@ gpt-4o:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 4
+    parallel: 5
 
 meltemi-instruct-7b-v1.5-orpo:
     model_name: meltemi-instruct-7b-v1.5-orpo
