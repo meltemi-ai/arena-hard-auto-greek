@@ -8,11 +8,10 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - gemma-2-27b-it
-  
-
-#  - krikri-annealing-sft-stage2-dpo_min-run4
-
+  - krikri-annealing-sft-stage2-dpo_min-run4
+#  - krikri-annealing-sft-stage2-dpo_min-epoch-1-run4
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-run4
+#  - krikri-annealing-sft-stage2-dpo_min-length-norm-run4
 
 #  - claude-3.5-sonnet-v2 #DONE
 #  - aya-expanse-8b #DONE
@@ -33,3 +32,4 @@ model_list:
 #  - krikri-annealing-sft-stage2-dpo_max-run4 #DONE
 #  - meltemi-annealing-sft-run5 #DONE
 #  - krikri-annealing-sft-stage2-dpo_max-epoch-1-run4 # DONE
+#  - gemma-2-27b-it # DONE

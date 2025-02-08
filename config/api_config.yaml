@@ -137,14 +137,6 @@ krikri-annealing-sft-stage2-dpo_max-run4:
     api_type: openai
     parallel: 16
 
-krikri-annealing-sft-stage2-dpo_min-run4:
-    model_name: krikri-annealing-sft-stage2-dpo_min-run4
-    endpoints:
-        - api_base: http://localhost:8000/v1
-          api_key: token-abc123
-    api_type: openai
-    parallel: 16
-
 gemma-2-27b-it:
     model_name: gemma-2-27b-it
     endpoints:
@@ -177,10 +169,35 @@ krikri-annealing-sft-stage2-dpo_max-epoch-1-run4:
     api_type: openai
     parallel: 16
     
-krikri-annealing-sft-stage2-dpo_max-epoch-1-run4:
-    model_name: krikri-annealing-sft-stage2-dpo_max-epoch-1-run4
+krikri-annealing-sft-stage2-dpo_min-epoch-1-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_min-epoch-1-run4
     endpoints:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
     parallel: 16
+
+krikri-annealing-sft-stage2-dpo_min-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_min-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_min-length-norm-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_min-length-norm-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-length-norm-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
