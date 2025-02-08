@@ -160,3 +160,19 @@ aya-expanse-32b:
           api_key: token-abc123
     api_type: openai
     parallel: 16
+
+meltemi-annealing-sft-run5:
+    model_name: meltemi-annealing-sft-run5
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-epoch-1-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_max-epoch-1-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
