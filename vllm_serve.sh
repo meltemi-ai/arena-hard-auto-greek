@@ -29,7 +29,7 @@ MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-simpo"
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes/checkpoint-1560"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-simpo-checkpoint-1560"
 
-NUM_GPUS=4
+NUM_GPUS=8
 MAX_MODEL_LEN=8192
 
 vllm serve $MODEL_PATH \
