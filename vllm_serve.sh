@@ -1,5 +1,5 @@
 CACHE_DIR="/opt/dlami/nvme/.cache"
-BASE_MODEL_PATH="/opt/dlami/nvme/models"
+BASE_MODEL_PATH="/home/ubuntu/models"
 
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-mixed-bf16"
 #MODEL_NAME="krikri-annealing-sft-mixed-run1"
@@ -18,12 +18,16 @@ BASE_MODEL_PATH="/opt/dlami/nvme/models"
 
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-min"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_min-run4"
-MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-min-epoch-1"
-MODEL_NAME="krikri-annealing-sft-stage2-dpo_min-epoch-1-run4" # WITHOUT PROMPT CACHING
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-min-epoch-1"
+#MODEL_NAME="krikri-annealing-sft-stage2-dpo_min-epoch-1-run4" # WITHOUT PROMPT CACHING
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-run4"
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-min-length-norm"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_min-length-norm-run4" # WITHOUT PROMPT CACHING
+MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes"
+MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-simpo"
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes/checkpoint-1560"
+#MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-simpo-checkpoint-1560"
 
 NUM_GPUS=4
 MAX_MODEL_LEN=8192
