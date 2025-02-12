@@ -8,7 +8,8 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-simpo
+  - krikri-annealing-sft-stage2-dpo_max-length-norm-simpo-checkpoint-1560
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-simpo # DONE
 #  - krikri-annealing-sft-stage2-dpo_max-length-norm-simpo-checkpoint-1560
 
 #  - claude-3.5-sonnet-v2 # DONE
