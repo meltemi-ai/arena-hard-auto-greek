@@ -32,8 +32,8 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-simpo
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-simpo-checkpoint-1560
+  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy
+  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560
   - krikri-annealing-sft-stage2-dpo_min-length-norm-run4
   - krikri-annealing-sft-stage2-dpo_max-length-norm-run4
   - krikri-annealing-sft-mixed-run1

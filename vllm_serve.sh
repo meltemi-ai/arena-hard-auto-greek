@@ -25,9 +25,9 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-min-length-norm"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_min-length-norm-run4" # WITHOUT PROMPT CACHING
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes"
-#MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-simpo"
-MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes/checkpoint-1560"
-MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-simpo-checkpoint-1560"
+#MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy"
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes/checkpoint-1560"
+#MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560"
 
 NUM_GPUS=8
 MAX_MODEL_LEN=8192
