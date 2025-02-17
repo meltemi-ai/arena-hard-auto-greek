@@ -224,3 +224,11 @@ krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm:
           api_key: token-abc123
     api_type: openai
     parallel: 16
+    
+krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
