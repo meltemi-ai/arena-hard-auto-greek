@@ -95,7 +95,7 @@ gpt-4o:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 5
+    parallel: 6
 
 meltemi-instruct-7b-v1.5-orpo:
     model_name: meltemi-instruct-7b-v1.5-orpo
@@ -219,6 +219,14 @@ krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560:
 
 krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm:
     model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+    
+krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm
     endpoints:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123

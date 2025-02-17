@@ -1,0 +1,25 @@
+model,score,rating_q025,rating_q975,CI,avg_tokens,date
+claude-3.5-sonnet-v2,65.1,64.03,65.64,"(-1.07, +0.54)",636.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm,53.42,52.47,54.66,"(-0.95, +1.24)",938.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm,50.08,49.22,50.66,"(-0.86, +0.58)",1752.0,2025-02-17
+gpt-4o-mini,50.0,50.0,50.0,"(-0.00, +0.00)",713.0,2025-02-17
+aya-expanse-32b,42.15,40.87,43.79,"(-1.28, +1.64)",943.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_max-length-norm-simpo-checkpoint-1560,36.4,35.25,37.85,"(-1.15, +1.45)",0.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_max-length-norm-simpo,34.55,33.78,35.85,"(-0.77, +1.30)",0.0,2025-02-17
+gemma-2-27b-it,31.93,30.52,33.36,"(-1.41, +1.43)",675.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_max-length-norm-run4,30.85,29.86,32.43,"(-0.99, +1.58)",707.0,2025-02-17
+aya-expanse-8b,26.49,25.63,27.5,"(-0.86, +1.01)",954.0,2025-02-17
+command-rplus,24.7,23.46,26.47,"(-1.24, +1.77)",846.0,2025-02-17
+krikri-annealing-dpo-mixed-run1,21.69,20.44,22.83,"(-1.25, +1.14)",1487.0,2025-02-17
+llama-3.1-70b,21.26,20.19,22.79,"(-1.07, +1.53)",693.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_max-run4,17.61,17.03,18.99,"(-0.58, +1.38)",953.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_max-epoch-1-run4,16.84,16.39,17.6,"(-0.45, +0.76)",899.0,2025-02-17
+krikri-annealing-sft-mixed-run1,14.85,14.17,15.79,"(-0.68, +0.94)",1182.0,2025-02-17
+krikri-annealing-sft-stage2-run4,14.05,13.2,15.24,"(-0.85, +1.19)",753.0,2025-02-17
+krikri-annealing-sft-stage2-dpo_min-length-norm-run4,10.54,9.92,11.41,"(-0.62, +0.87)",471.0,2025-02-17
+command-r,8.81,8.12,9.64,"(-0.69, +0.83)",659.0,2025-02-17
+mixtral-8x7b-instruct-v0.1,4.5,4.14,4.91,"(-0.36, +0.41)",540.0,2025-02-17
+llama-3.1-8b,4.0,3.44,4.41,"(-0.56, +0.41)",1079.0,2025-02-17
+mistral-7b-instruct-v0.2,2.01,1.71,2.48,"(-0.30, +0.47)",548.0,2025-02-17
+meltemi-instruct-7b-v1.5-orpo,1.42,1.11,1.71,"(-0.31, +0.29)",715.0,2025-02-17
+gemma2-9b-it,0.0,0.0,0.0,"(-0.00, +0.00)",3.0,2025-02-17
