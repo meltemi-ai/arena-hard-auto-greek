@@ -28,10 +28,27 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy"
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes/checkpoint-1560"
 #MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560"
-# MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm"
-# MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm"
-MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm"
-MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm"
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm"
+#MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm"
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm"
+#MODEL_NAME="krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm"
+
+MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2"
+MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2"
+
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr"
+#MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr"
+#
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie"
+#MODEL_NAME="krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie"
+#
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie"
+#MODEL_NAME="krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie"
+#
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie"
+#MODEL_NAME="krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie"
+
+
 
 NUM_GPUS=4
 MAX_MODEL_LEN=8192
