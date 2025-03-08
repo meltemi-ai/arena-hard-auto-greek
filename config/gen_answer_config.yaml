@@ -8,8 +8,8 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
-  # - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
+  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
 
 
 #  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2 # DONE
