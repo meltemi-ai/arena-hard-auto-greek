@@ -45,8 +45,8 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 
 MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint"
 MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint"
-MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
-MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
+# MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
+# MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
 
 
 NUM_GPUS=4
