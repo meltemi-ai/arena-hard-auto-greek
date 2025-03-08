@@ -40,10 +40,13 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 #MODEL_NAME="krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie"
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie"
 #MODEL_NAME="krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie"
+# MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie"
+# MODEL_NAME="krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie"
 
-MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie"
-MODEL_NAME="krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie"
-
+MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint"
+MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint"
+MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
+MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
 
 
 NUM_GPUS=4
