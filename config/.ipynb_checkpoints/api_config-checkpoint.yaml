@@ -91,11 +91,9 @@ mistral-7b-instruct-v0.2:
 
 gpt-4o:
     model_name: gpt-4o
-    endpoints:
-        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
-          api_key: tokenreplace
+    endpoints: null
     api_type: openai
-    parallel: 6
+    parallel: 8
 
 meltemi-instruct-7b-v1.5-orpo:
     model_name: meltemi-instruct-7b-v1.5-orpo
@@ -273,4 +271,18 @@ krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55
     api_type: openai
     parallel: 50
 
-
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+    
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50

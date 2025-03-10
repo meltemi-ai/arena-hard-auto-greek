@@ -91,11 +91,9 @@ mistral-7b-instruct-v0.2:
 
 gpt-4o:
     model_name: gpt-4o
-    endpoints:
-        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
-          api_key: tokenreplace
+    endpoints: null
     api_type: openai
-    parallel: 6
+    parallel: 8
 
 meltemi-instruct-7b-v1.5-orpo:
     model_name: meltemi-instruct-7b-v1.5-orpo
