@@ -32,6 +32,9 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
+  - deepseek-chat
+  - deepseek-reasoner
+  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint-with-thinking
   - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
   - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
   - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2

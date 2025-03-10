@@ -33,7 +33,7 @@ from utils import (
 
 
 def get_answer(
-    question: dict, model: str, endpoint_info: dict, num_choices: int, max_tokens: int, temperature: float, answer_file: str, api_dict: dict
+    question: dict, model: str, endpoint_info: dict, num_choices: int, max_tokens: int, temperature: float, answer_file: str, api_dict: dict, thinking
 ):
     if question["category"] in temperature_config:
         temperature = temperature_config[question["category"]]
@@ -85,6 +85,15 @@ def get_answer(
                                                 temperature=temperature, 
                                                 max_tokens=max_tokens, 
                                                 api_dict=api_dict)
+
+            if thinking:
+                try:
+                    output_start = output.find('<output>') + len('<output>')
+                    output_end = output.find('</output>')
+                    output = output[output_start:output_end].strip()
+                except:
+                    output = 'Η απάντηση δεν ακολουθεί σωστό formatting.'
+
             conv.append({"role": "assistant", "content": output})
 
             turns.append({"content": output})
@@ -119,7 +128,12 @@ if __name__ == "__main__":
     parser.add_argument(
         "--endpoint-file", type=str, default="config/api_config.yaml"
     )
+    parser.add_argument(
+        "--thinking", action="store_true"
+    )
     args = parser.parse_args()
+
+    thinking = args.thinking
 
     settings = make_config(args.setting_file)
     endpoint_list = make_config(args.endpoint_file)
@@ -178,6 +192,7 @@ if __name__ == "__main__":
                     settings["temperature"],
                     answer_file,
                     get_endpoint(endpoint_info["endpoints"]),
+                    thinking
                 )
                 futures.append(future)
             if count > 0:
