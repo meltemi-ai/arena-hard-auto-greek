@@ -11,9 +11,10 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - deepseek-chat
-#  - deepseek-reasoner
-#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint-with-thinking
+# - deepseek-chat
+  - deepseek-reasoner
+  - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316-with-thinking
 
 #  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint # DONE
 #  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316 # DONE
