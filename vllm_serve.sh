@@ -46,10 +46,12 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 #MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint"
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
 #MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
-MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking"
-MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking"
+#MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking"
+#MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking"
+MODEL_PATH="$BASE_MODEL_PATH/base_neo_arcee_fusion_round-2_base"
+MODEL_NAME="base_neo_arcee_fusion_round-2_base"
 
-NUM_GPUS=4
+NUM_GPUS=8
 MAX_MODEL_LEN=8192
 
 vllm serve $MODEL_PATH \
