@@ -33,8 +33,8 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 # Add your model below for evaluation
 model_list:
   - base_neo_arcee_fusion_round-2_base
-  - base_neo_arcee_fusion_round-2_base_with_thinking
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
+  # - base_neo_arcee_fusion_round-2_base_with_thinking
+  # - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
   - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
   - deepseek-chat
   - deepseek-reasoner
@@ -61,7 +61,7 @@ model_list:
   - aya-expanse-8b
   - meltemi-instruct-7b-v1.5-orpo
   - krikri-annealing-dpo-mixed-run1
-  - gemma2-9b-it
+  # - gemma2-9b-it
   - llama-3.1-70b
   - llama-3.1-8b
   - command-r

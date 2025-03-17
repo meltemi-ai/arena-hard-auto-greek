@@ -48,8 +48,10 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 #MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316"
 #MODEL_PATH="$BASE_MODEL_PATH/krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking"
 #MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking"
-MODEL_PATH="$BASE_MODEL_PATH/base_neo_arcee_fusion_round-2_base"
-MODEL_NAME="base_neo_arcee_fusion_round-2_base"
+# MODEL_PATH="$BASE_MODEL_PATH/base_neo_arcee_fusion_round-2_base"
+# MODEL_NAME="base_neo_arcee_fusion_round-2_base"
+MODEL_PATH="google/gemma-3-27b-it"
+MODEL_NAME="gemma-3-27b-it"
 
 NUM_GPUS=8
 MAX_MODEL_LEN=8192
