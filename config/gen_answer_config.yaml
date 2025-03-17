@@ -11,7 +11,9 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - gemma-3-27b-it
+  - gemma-3-4b-it
+#  - gemma-3-12b-it #DONE
+#  - gemma-3-27b-it # DONE
 #  - base_neo_arcee_fusion_round-2_base # DONE
 # - base_neo_arcee_fusion_round-2_base_with_thinking
 #  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
