@@ -50,8 +50,10 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 #MODEL_NAME="krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking"
 # MODEL_PATH="$BASE_MODEL_PATH/base_neo_arcee_fusion_round-2_base"
 # MODEL_NAME="base_neo_arcee_fusion_round-2_base"
-MODEL_PATH="google/gemma-3-4b-it"
-MODEL_NAME="gemma-3-4b-it"
+#MODEL_PATH="google/gemma-3-4b-it"
+#MODEL_NAME="gemma-3-4b-it"
+MODEL_PATH="mrfakename/mistral-small-3.1-24b-instruct-2503-hf"
+MODEL_NAME="mistral-small-3.1-24b-instruct-2503"
 
 NUM_GPUS=8
 MAX_MODEL_LEN=8192

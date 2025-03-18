@@ -370,3 +370,12 @@ gemma-3-4b-it:
           api_key: token-abc123
     api_type: openai
     parallel: 50
+
+mistral-small-3.1-24b-instruct-2503:
+    model_name: mistral-small-3.1-24b-instruct-2503
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
