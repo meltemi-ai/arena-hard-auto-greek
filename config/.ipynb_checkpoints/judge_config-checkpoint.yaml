@@ -32,6 +32,9 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
+  - gemma-3-27b-it
+  - gemma-3-12b-it
+  - gemma-3-4b-it
   - base_neo_arcee_fusion_round-2_base
   # - base_neo_arcee_fusion_round-2_base_with_thinking
   # - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
