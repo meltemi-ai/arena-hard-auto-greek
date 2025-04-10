@@ -3,15 +3,29 @@ name: config of answer generation for arena-hard-v0.1
 bench_name: arena-hard-v0.1
 
 temperature: 0.0
-max_tokens: 4096
+# Fore non-thinking models
+#max_tokens: 4096
+# For thinking models
+max_tokens: 8192
 num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
-  # - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
+  - Llama-4-Scout-17B-16E-Instruct
+  # - mistral-small-3.1-24b-instruct-2503
+#  - gemma-3-4b-it
+#  - gemma-3-12b-it #DONE
+#  - gemma-3-27b-it # DONE
+#  - base_neo_arcee_fusion_round-2_base # DONE
+# - base_neo_arcee_fusion_round-2_base_with_thinking
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
+# - deepseek-chat
+#  - deepseek-reasoner # DONE
+#  - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking # DONE
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316-with-thinking # 4k misformats 74 times 8k misformats 42 times
 
-
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint # DONE
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316 # DONE
 #  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2 # DONE
 #  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr # DONE
 #  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie # DONE
