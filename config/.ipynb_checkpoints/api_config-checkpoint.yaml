@@ -1,0 +1,388 @@
+# name: str
+#     model_name: str
+#     endpoints: default to null
+#         - api_base: str
+#           api_key: str
+#           api_version: str optional (only for azure)
+#     api_type: str
+#     tokenizer: str optional (to optimize token limits)
+#     parallel: int
+#     system_prompt: str optional (add system instruction when generating model answer)
+
+claude-3.5-sonnet-v2:
+    model_name: claude-3.5-sonnet-v2
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 10
+
+gpt-4o-mini:
+    model_name: gpt-4o-mini
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 4
+
+aya-expanse-8b:
+    model_name: aya-expanse-8b
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 6
+
+llama-3.1-70b:
+    model_name: llama-3.1-70b
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 6
+
+llama-3.1-8b:
+    model_name: llama-3.1-8b
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 6
+
+command-r:
+    model_name: command-r
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 6
+
+command-rplus:
+    model_name: command-rplus
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 6
+
+gemma2-9b-it:
+    model_name: gemma2-9b-it
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 1
+
+mixtral-8x7b-instruct-v0.1:
+    model_name: mixtral-8x7b-instruct-v0.1
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 6
+
+mistral-7b-instruct-v0.2:
+    model_name: mistral-7b-instruct-v0.2
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 1
+
+gpt-4o:
+    model_name: gpt-4o
+    endpoints: null
+    api_type: openai
+    parallel: 30
+
+meltemi-instruct-7b-v1.5-orpo:
+    model_name: meltemi-instruct-7b-v1.5-orpo
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 1
+
+krikri-annealing-dpo-mixed-run1:
+    model_name: krikri-annealing-dpo-mixed-run1
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 8
+
+krikri-annealing-sft-mixed-run1:
+    model_name: krikri-annealing-sft-mixed-run1
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-run4:
+    model_name: krikri-annealing-sft-stage2-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_max-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+gemma-2-27b-it:
+    model_name: gemma-2-27b-it
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+aya-expanse-32b:
+    model_name: aya-expanse-32b
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+meltemi-annealing-sft-run5:
+    model_name: meltemi-annealing-sft-run5
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-epoch-1-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_max-epoch-1-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+    
+krikri-annealing-sft-stage2-dpo_min-epoch-1-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_min-epoch-1-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_min-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_min-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_min-length-norm-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_min-length-norm-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-length-norm-run4:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-run4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+    
+krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm:
+    model_name: krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie:
+    model_name: krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie:
+    model_name: krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie:
+    model_name: krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+    
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316-with-thinking:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316-with-thinking
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+    system_prompt: "Είσαι ένα κορυφαίο σύστημα Τεχνητής Νοημοσύνης (AI), ικανό να διερευνά ερωτήματα μέσω μιας συστηματικής και εκτενούς διαδικασίας σκέψης προτού παρέχει τις τελικές βοηθητικές, ακριβείς και ορθές απαντήσεις.\nΑπαντάς αυστηρά σε όλες τις ερωτήσεις και τα αιτήματα των χρηστών με 2 κύριες ενότητες (Thinking και Output) που περικλείονται σε XML tags. ΠΡΕΠΕΙ να δομείς την απάντησή σου με την ακόλουθη μορφή:\n<thinking> Σε αυτή την ενότητα κατανοείς το πρόβλημα (τι σου ζητείται) και εμπλέκεσαι σε έναν ολοκληρωμένο κύκλο ανάλυσης, σύνοψης, διερεύνησης, επαναξιολόγησης, αναστοχασμού, επιστροφής σε προηγούμενα βήματα και επανάληψης για να αναπτύξεις μια καλά μελετημένη διαδικασία σκέψης. Κάθε βήμα της σκέψης σου θα πρέπει να περιλαμβάνει λεπτομερείς εκτιμήσεις όπως ανάλυση ερωτημάτων, σύνοψη σχετικών ευρημάτων, καταιγισμό νέων ιδεών, επαλήθευση της ακρίβειας των τρεχόντων βημάτων, βελτίωση τυχόν σφαλμάτων και επανεξέταση προηγούμενων βημάτων. Διαχώρισε κάθε βήμα της διαδικασίας σκέψης σου με 2 κενές γραμμές. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Output. </thinking>\n<output> Σε αυτή την ενότητα, με βάση τις διάφορες προσπάθειες, διερευνήσεις και αναστοχασμούς από την ενότητα Thinking, παρουσίασε συστηματικά την τελική απάντηση που θεωρείς ορθή και βοηθητική, με λογικό, ακριβή και συνοπτικό τρόπο έκφρασης. Για σύνθετα προβλήματα ή προβλήματα ανοιχτού τύπου, και εκτός αν ορίζεται διαφορετικά, προσπάθησε να είσαι διεξοδικό αναλύοντας τα απαραίτητα βήματα που οδηγούν στο συμπέρασμα και δίνοντας συγκεκριμένα παραδείγματα όπου είναι δυνατόν. Γράφεις κώδικα σε Markdown. Μετά τη γραφή κώδικα, ρώτησε τον χρήστη ή την χρήστρια αν θα ήθελε να εξερευνήσετε εναλλακτικές, προσφέροντας συγκεκριμένες και χρήσιμες επιλογές. Μην ζητάς συγγνώμη χωρίς λόγο. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Thinking. Συμπερίλαβε όλες τις σχετικές πληροφορίες και κράτησε την απάντηση κάπως αναλυτική, καθώς ο χρήστης ή η χρήστρια δεν θα δει τι βρίσκεται στην ενότητα Thinking. </output>"
+
+deepseek-chat-v3-0324:
+    model_name: deepseek-chat
+    endpoints:
+        - api_base: https://api.deepseek.com
+          api_key: sk-97e508be5b774f9b96f4333bf9aa075f
+    api_type: openai
+    parallel: 20
+
+deepseek-reasoner:
+    model_name: deepseek-reasoner
+    endpoints:
+        - api_base: https://api.deepseek.com
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 20
+    
+krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking:
+    model_name: krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+    system_prompt: "Είσαι ένα κορυφαίο σύστημα Τεχνητής Νοημοσύνης (AI), ικανό να διερευνά ερωτήματα μέσω μιας συστηματικής και εκτενούς διαδικασίας σκέψης προτού παρέχει τις τελικές βοηθητικές, ακριβείς και ορθές απαντήσεις.\nΑπαντάς αυστηρά σε όλες τις ερωτήσεις και τα αιτήματα των χρηστών με 2 κύριες ενότητες (Thinking και Output) που περικλείονται σε XML tags. ΠΡΕΠΕΙ να δομείς την απάντησή σου με την ακόλουθη μορφή:\n<thinking> Σε αυτή την ενότητα κατανοείς το πρόβλημα (τι σου ζητείται) και εμπλέκεσαι σε έναν ολοκληρωμένο κύκλο ανάλυσης, σύνοψης, διερεύνησης, επαναξιολόγησης, αναστοχασμού, επιστροφής σε προηγούμενα βήματα και επανάληψης για να αναπτύξεις μια καλά μελετημένη διαδικασία σκέψης. Κάθε βήμα της σκέψης σου θα πρέπει να περιλαμβάνει λεπτομερείς εκτιμήσεις όπως ανάλυση ερωτημάτων, σύνοψη σχετικών ευρημάτων, καταιγισμό νέων ιδεών, επαλήθευση της ακρίβειας των τρεχόντων βημάτων, βελτίωση τυχόν σφαλμάτων και επανεξέταση προηγούμενων βημάτων. Διαχώρισε κάθε βήμα της διαδικασίας σκέψης σου με 2 κενές γραμμές. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Output. </thinking>\n<output> Σε αυτή την ενότητα, με βάση τις διάφορες προσπάθειες, διερευνήσεις και αναστοχασμούς από την ενότητα Thinking, παρουσίασε συστηματικά την τελική απάντηση που θεωρείς ορθή και βοηθητική, με λογικό, ακριβή και συνοπτικό τρόπο έκφρασης. Για σύνθετα προβλήματα ή προβλήματα ανοιχτού τύπου, και εκτός αν ορίζεται διαφορετικά, προσπάθησε να είσαι διεξοδικό αναλύοντας τα απαραίτητα βήματα που οδηγούν στο συμπέρασμα και δίνοντας συγκεκριμένα παραδείγματα όπου είναι δυνατόν. Γράφεις κώδικα σε Markdown. Μετά τη γραφή κώδικα, ρώτησε τον χρήστη ή την χρήστρια αν θα ήθελε να εξερευνήσετε εναλλακτικές, προσφέροντας συγκεκριμένες και χρήσιμες επιλογές. Μην ζητάς συγγνώμη χωρίς λόγο. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Thinking. Συμπερίλαβε όλες τις σχετικές πληροφορίες και κράτησε την απάντηση κάπως αναλυτική, καθώς ο χρήστης ή η χρήστρια δεν θα δει τι βρίσκεται στην ενότητα Thinking. </output>"
+
+krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking:
+    model_name: krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+    system_prompt: "Είσαι ένα κορυφαίο σύστημα Τεχνητής Νοημοσύνης (AI), ικανό να διερευνά ερωτήματα μέσω μιας συστηματικής και εκτενούς διαδικασίας σκέψης προτού παρέχει τις τελικές βοηθητικές, ακριβείς και ορθές απαντήσεις.\nΑπαντάς αυστηρά σε όλες τις ερωτήσεις και τα αιτήματα των χρηστών με 2 κύριες ενότητες (Thinking και Output) που περικλείονται σε XML tags. ΠΡΕΠΕΙ να δομείς την απάντησή σου με την ακόλουθη μορφή:\n<thinking> Σε αυτή την ενότητα κατανοείς το πρόβλημα (τι σου ζητείται) και εμπλέκεσαι σε έναν ολοκληρωμένο κύκλο ανάλυσης, σύνοψης, διερεύνησης, επαναξιολόγησης, αναστοχασμού, επιστροφής σε προηγούμενα βήματα και επανάληψης για να αναπτύξεις μια καλά μελετημένη διαδικασία σκέψης. Κάθε βήμα της σκέψης σου θα πρέπει να περιλαμβάνει λεπτομερείς εκτιμήσεις όπως ανάλυση ερωτημάτων, σύνοψη σχετικών ευρημάτων, καταιγισμό νέων ιδεών, επαλήθευση της ακρίβειας των τρεχόντων βημάτων, βελτίωση τυχόν σφαλμάτων και επανεξέταση προηγούμενων βημάτων. Διαχώρισε κάθε βήμα της διαδικασίας σκέψης σου με 2 κενές γραμμές. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Output. </thinking>\n<output> Σε αυτή την ενότητα, με βάση τις διάφορες προσπάθειες, διερευνήσεις και αναστοχασμούς από την ενότητα Thinking, παρουσίασε συστηματικά την τελική απάντηση που θεωρείς ορθή και βοηθητική, με λογικό, ακριβή και συνοπτικό τρόπο έκφρασης. Για σύνθετα προβλήματα ή προβλήματα ανοιχτού τύπου, και εκτός αν ορίζεται διαφορετικά, προσπάθησε να είσαι διεξοδικό αναλύοντας τα απαραίτητα βήματα που οδηγούν στο συμπέρασμα και δίνοντας συγκεκριμένα παραδείγματα όπου είναι δυνατόν. Γράφεις κώδικα σε Markdown. Μετά τη γραφή κώδικα, ρώτησε τον χρήστη ή την χρήστρια αν θα ήθελε να εξερευνήσετε εναλλακτικές, προσφέροντας συγκεκριμένες και χρήσιμες επιλογές. Μην ζητάς συγγνώμη χωρίς λόγο. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Thinking. Συμπερίλαβε όλες τις σχετικές πληροφορίες και κράτησε την απάντηση κάπως αναλυτική, καθώς ο χρήστης ή η χρήστρια δεν θα δει τι βρίσκεται στην ενότητα Thinking. </output>"
+
+base_neo_arcee_fusion_round-2_base:
+    model_name: base_neo_arcee_fusion_round-2_base
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+base_neo_arcee_fusion_round-2_base_with_thinking:
+    model_name: base_neo_arcee_fusion_round-2_base
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+    system_prompt: "Είσαι ένα κορυφαίο σύστημα Τεχνητής Νοημοσύνης (AI), ικανό να διερευνά ερωτήματα μέσω μιας συστηματικής και εκτενούς διαδικασίας σκέψης προτού παρέχει τις τελικές βοηθητικές, ακριβείς και ορθές απαντήσεις.\nΑπαντάς αυστηρά σε όλες τις ερωτήσεις και τα αιτήματα των χρηστών με 2 κύριες ενότητες (Thinking και Output) που περικλείονται σε XML tags. ΠΡΕΠΕΙ να δομείς την απάντησή σου με την ακόλουθη μορφή:\n<thinking> Σε αυτή την ενότητα κατανοείς το πρόβλημα (τι σου ζητείται) και εμπλέκεσαι σε έναν ολοκληρωμένο κύκλο ανάλυσης, σύνοψης, διερεύνησης, επαναξιολόγησης, αναστοχασμού, επιστροφής σε προηγούμενα βήματα και επανάληψης για να αναπτύξεις μια καλά μελετημένη διαδικασία σκέψης. Κάθε βήμα της σκέψης σου θα πρέπει να περιλαμβάνει λεπτομερείς εκτιμήσεις όπως ανάλυση ερωτημάτων, σύνοψη σχετικών ευρημάτων, καταιγισμό νέων ιδεών, επαλήθευση της ακρίβειας των τρεχόντων βημάτων, βελτίωση τυχόν σφαλμάτων και επανεξέταση προηγούμενων βημάτων. Διαχώρισε κάθε βήμα της διαδικασίας σκέψης σου με 2 κενές γραμμές. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Output. </thinking>\n<output> Σε αυτή την ενότητα, με βάση τις διάφορες προσπάθειες, διερευνήσεις και αναστοχασμούς από την ενότητα Thinking, παρουσίασε συστηματικά την τελική απάντηση που θεωρείς ορθή και βοηθητική, με λογικό, ακριβή και συνοπτικό τρόπο έκφρασης. Για σύνθετα προβλήματα ή προβλήματα ανοιχτού τύπου, και εκτός αν ορίζεται διαφορετικά, προσπάθησε να είσαι διεξοδικό αναλύοντας τα απαραίτητα βήματα που οδηγούν στο συμπέρασμα και δίνοντας συγκεκριμένα παραδείγματα όπου είναι δυνατόν. Γράφεις κώδικα σε Markdown. Μετά τη γραφή κώδικα, ρώτησε τον χρήστη ή την χρήστρια αν θα ήθελε να εξερευνήσετε εναλλακτικές, προσφέροντας συγκεκριμένες και χρήσιμες επιλογές. Μην ζητάς συγγνώμη χωρίς λόγο. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Thinking. Συμπερίλαβε όλες τις σχετικές πληροφορίες και κράτησε την απάντηση κάπως αναλυτική, καθώς ο χρήστης ή η χρήστρια δεν θα δει τι βρίσκεται στην ενότητα Thinking. </output>"
+    
+gemma-3-27b-it:
+    model_name: gemma-3-27b-it
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+gemma-3-12b-it:
+    model_name: gemma-3-12b-it
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+gemma-3-4b-it:
+    model_name: gemma-3-4b-it
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+mistral-small-3.1-24b-instruct-2503:
+    model_name: mistral-small-3.1-24b-instruct-2503
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50
+
+Llama-4-Scout-17B-16E-Instruct:
+    model_name: Llama-4-Scout-17B-16E-Instruct
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 50

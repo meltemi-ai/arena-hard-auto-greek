@@ -1,0 +1,71 @@
+name: config of answer generation for arena-hard-v0.1
+
+bench_name: arena-hard-v0.1
+
+# Fore non-thinking models
+#temperature: 0.0
+#max_tokens: 4096
+# For thinking models
+temperature: 0.6
+max_tokens: 24576
+num_choices: 1
+
+# a list of model to generate answers
+model_list:
+  - qwen-3-1.7b
+#  - qwen-3-14b
+#  - qwen-3-30b-a3b
+#  - qwen-3-32b
+  # - claude-3.7-sonnet
+  # - deepseek-chat-v3-0324
+  # - Llama-4-Scout-17B-16E-Instruct
+  # - mistral-small-3.1-24b-instruct-2503
+#  - gemma-3-4b-it
+#  - gemma-3-12b-it #DONE
+#  - gemma-3-27b-it # DONE
+#  - base_neo_arcee_fusion_round-2_base # DONE
+# - base_neo_arcee_fusion_round-2_base_with_thinking
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
+# - deepseek-chat
+#  - deepseek-reasoner # DONE
+#  - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking # DONE
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316-with-thinking # 4k misformats 74 times 8k misformats 42 times
+
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint # DONE
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316 # DONE
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2 # DONE
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr # DONE
+#  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie # DONE
+#  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie # DONE
+# - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie # DONE
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm # DONE
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm # DONE
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-simpo
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy # DONE
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560 # DONE
+
+#  - claude-3.5-sonnet-v2 # DONE
+#  - aya-expanse-8b # DONE
+#  - llama-3.1-70b # DONE
+#  - llama-3.1-8b # DONE
+#  - command-r # DONE
+#  - command-rplus # DONE
+#  - gemma2-9b-it # DONE
+#  - mixtral-8x7b-instruct-v0.1 # DONE
+#  - mistral-7b-instruct-v0.2 # DONE
+#  - gpt-4o # DONE
+#  - meltemi-instruct-7b-v1.5-orpo # DONE
+#  - gpt-4o-mini # DONE
+#  - krikri-annealing-dpo-mixed-run1 # DONE
+#  - krikri-annealing-sft-mixed-run1 # DONE
+#  - aya-expanse-32b # DONE
+#  - krikri-annealing-sft-stage2-run4 # DONE
+#  - krikri-annealing-sft-stage2-dpo_max-run4 # DONE
+#  - meltemi-annealing-sft-run5 # DONE
+#  - krikri-annealing-sft-stage2-dpo_max-epoch-1-run4 # DONE
+#  - gemma-2-27b-it # DONE
+#  - krikri-annealing-sft-stage2-dpo_min-run4 # DONE
+#  - krikri-annealing-sft-stage2-dpo_min-epoch-1-run4 # DONE
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-run4 # DONE
+#  - krikri-annealing-sft-stage2-dpo_min-length-norm-run4 # DONE # WITHOUT PROMPT CACHING NOR MODEL LEN
+#  - krikri-annealing-sft-stage2-dpo_min-epoch-1-run4 # DONE # WITHOUT PROMPT CACHING NOR MODEL LEN
