@@ -62,11 +62,12 @@ MODEL_NAME="qwen-3-14b"
 MODEL_PATH="Qwen/Qwen3-1.7B"
 MODEL_NAME="qwen-3-1.7b"
 NUM_GPUS=4
-MAX_MODEL_LEN=16384
+MAX_MODEL_LEN=24576
 
 docker run --runtime nvidia --gpus all \
     --shm-size 64g \
     -v ~/.cache/huggingface:/root/.cache/huggingface \
+    --env "HUGGING_FACE_HUB_TOKEN=hf_key" \
     -p 8000:8000 \
     --ipc=host \
     vllm/vllm-openai:v0.8.4 \

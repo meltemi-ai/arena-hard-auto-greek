@@ -6,17 +6,19 @@ bench_name: arena-hard-v0.1
 #temperature: 0.0
 #max_tokens: 4096
 # For thinking models
-temperature: 0.6
-max_tokens: 16384
+#temperature: 0.6
+temperature: 0.35
+max_tokens: 8192
 num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - qwen-3-8b
-#  - qwen-3-1.7b # DONE
-#  - qwen-3-14b # DONE
-#  - qwen-3-30b-a3b # DONE
-#  - qwen-3-32b # DONE
+  - krikri-8b-instruct-temp0_35
+#  - krikri-8b-instruct-with-thinking-temp0_35
+#  - qwen-3-1.7b
+#  - qwen-3-14b
+#  - qwen-3-30b-a3b
+#  - qwen-3-32b
   # - claude-3.7-sonnet
   # - deepseek-chat-v3-0324
   # - Llama-4-Scout-17B-16E-Instruct
