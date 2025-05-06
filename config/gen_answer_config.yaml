@@ -13,8 +13,8 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - krikri-8b-instruct-temp0_35
-#  - krikri-8b-instruct-with-thinking-temp0_35
+#  - krikri-8b-instruct-temp0_35
+  - krikri-8b-instruct-with-thinking-temp0_35
 #  - qwen-3-1.7b
 #  - qwen-3-14b
 #  - qwen-3-30b-a3b
