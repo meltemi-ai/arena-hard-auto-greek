@@ -401,7 +401,7 @@ qwen-3-32b:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 50
+    parallel: 15
 
 qwen-3-30b-a3b:
     model_name: qwen-3-30b-a3b
@@ -409,7 +409,7 @@ qwen-3-30b-a3b:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 50
+    parallel: 45
 
 qwen-3-14b:
     model_name: qwen-3-14b
@@ -417,7 +417,7 @@ qwen-3-14b:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 50
+    parallel: 30
 
 qwen-3-1.7b:
     model_name: qwen-3-1.7b
@@ -426,3 +426,12 @@ qwen-3-1.7b:
           api_key: token-abc123
     api_type: openai
     parallel: 35
+
+qwen-3-8b:
+    model_name: qwen-3-8b
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 40
+
