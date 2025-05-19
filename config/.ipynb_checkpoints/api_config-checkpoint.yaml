@@ -300,7 +300,7 @@ deepseek-chat-v3-0324:
     model_name: deepseek-chat
     endpoints:
         - api_base: https://api.deepseek.com
-          api_key: sk-97e508be5b774f9b96f4333bf9aa075f
+          api_key: tokenreplace
     api_type: openai
     parallel: 20
 
@@ -386,3 +386,84 @@ Llama-4-Scout-17B-16E-Instruct:
           api_key: token-abc123
     api_type: openai
     parallel: 50
+    
+claude-3.5-sonnet-v2:
+    model_name: claude-3.5-sonnet-v2
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 10
+
+qwen-3-32b:
+    model_name: qwen-3-32b
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 15
+
+qwen-3-30b-a3b:
+    model_name: qwen-3-30b-a3b
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 45
+
+qwen-3-14b:
+    model_name: qwen-3-14b
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+
+qwen-3-1.7b:
+    model_name: qwen-3-1.7b
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 35
+
+qwen-3-8b:
+    model_name: qwen-3-8b
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 40
+
+krikri-8b-instruct-temp0_35:
+    model_name: krikri-8b-instruct
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+
+krikri-8b-instruct-with-thinking-temp0_35:
+    model_name: krikri-8b-instruct
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    system_prompt: "Είσαι ένα κορυφαίο σύστημα Τεχνητής Νοημοσύνης (AI), ικανό να διερευνά ερωτήματα μέσω μιας συστηματικής και εκτενούς διαδικασίας σκέψης προτού παρέχει τις τελικές βοηθητικές, ακριβείς και ορθές απαντήσεις.\nΑπαντάς αυστηρά σε όλες τις ερωτήσεις και τα αιτήματα των χρηστών με 2 κύριες ενότητες (Thinking και Output) που περικλείονται σε XML tags. ΠΡΕΠΕΙ να δομείς την απάντησή σου με την ακόλουθη μορφή:\n<thinking> Σε αυτή την ενότητα κατανοείς το πρόβλημα (τι σου ζητείται) και εμπλέκεσαι σε έναν ολοκληρωμένο κύκλο ανάλυσης, σύνοψης, διερεύνησης, επαναξιολόγησης, αναστοχασμού, επιστροφής σε προηγούμενα βήματα και επανάληψης για να αναπτύξεις μια καλά μελετημένη διαδικασία σκέψης. Κάθε βήμα της σκέψης σου θα πρέπει να περιλαμβάνει λεπτομερείς εκτιμήσεις όπως ανάλυση ερωτημάτων, σύνοψη σχετικών ευρημάτων, καταιγισμό νέων ιδεών, επαλήθευση της ακρίβειας των τρεχόντων βημάτων, βελτίωση τυχόν σφαλμάτων και επανεξέταση προηγούμενων βημάτων. Διαχώρισε κάθε βήμα της διαδικασίας σκέψης σου με 2 κενές γραμμές. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Output. </thinking>\n<output> Σε αυτή την ενότητα, με βάση τις διάφορες προσπάθειες, διερευνήσεις και αναστοχασμούς από την ενότητα Thinking, παρουσίασε συστηματικά την τελική απάντηση που θεωρείς ορθή και βοηθητική, με λογικό, ακριβή και συνοπτικό τρόπο έκφρασης. Για σύνθετα προβλήματα ή προβλήματα ανοιχτού τύπου, και εκτός αν ορίζεται διαφορετικά, προσπάθησε να είσαι διεξοδικό αναλύοντας τα απαραίτητα βήματα που οδηγούν στο συμπέρασμα και δίνοντας συγκεκριμένα παραδείγματα όπου είναι δυνατόν. Γράφεις κώδικα σε Markdown. Μετά τη γραφή κώδικα, ρώτησε τον χρήστη ή την χρήστρια αν θα ήθελε να εξερευνήσετε εναλλακτικές, προσφέροντας συγκεκριμένες και χρήσιμες επιλογές. Μην ζητάς συγγνώμη χωρίς λόγο. Μην κάνεις οποιαδήποτε αναφορά στην ενότητα ή στο tag Thinking. Συμπερίλαβε όλες τις σχετικές πληροφορίες και κράτησε την απάντηση κάπως αναλυτική, καθώς ο χρήστης ή η χρήστρια δεν θα δει τι βρίσκεται στην ενότητα Thinking. </output>"
+
+claude-3.7-sonnet:
+    model_name: claude-3.7-sonnet
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: token-abc123
+    api_type: openai
+    parallel: 16
+
+qwen-3-235b-a22b-fp8:
+    model_name: qwen-3-235b-a22b-fp8
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 10

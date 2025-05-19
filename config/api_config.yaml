@@ -456,6 +456,14 @@ claude-3.7-sonnet:
     model_name: claude-3.7-sonnet
     endpoints:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
-          api_key: ${LITELLM_API_KEY}
+          api_key: token-abc123
     api_type: openai
     parallel: 16
+
+qwen-3-235b-a22b-fp8:
+    model_name: qwen-3-235b-a22b-fp8
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 10

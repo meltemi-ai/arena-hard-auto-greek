@@ -3,14 +3,14 @@ name: judgment config file for Arena Hard
 bench_name: arena-hard-v0.1
 
 # Arena Hard default
-judge_model: gpt-4o
-reference: False
-ref_model: null
+# judge_model: gpt-4o
+# reference: False
+# ref_model: null
 
 # Custom for Greek
-# judge_model: claude-3.5-sonnet-v2
-# reference: False # Optional
-# ref_model: null
+judge_model: claude-3.7-sonnet
+reference: False # Optional
+ref_model: null
 
 baseline: True
 baseline_model: gpt-4o-mini
@@ -18,7 +18,7 @@ baseline_model: gpt-4o-mini
 pairwise: True
 temperature: 0
 #max_tokens: 4096
-max_tokens: 6144
+max_tokens: 8192
 
 regex_pattern: \[\[([AB<>=]+)\]\]
 number_of_judgment_attempts: 3
@@ -32,48 +32,76 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - Llama-4-Scout-17B-16E-Instruct
-  - mistral-small-3.1-24b-instruct-2503
-  - gemma-3-27b-it
-  - gemma-3-12b-it
-  - gemma-3-4b-it
-  - base_neo_arcee_fusion_round-2_base
-  # - base_neo_arcee_fusion_round-2_base_with_thinking
-  # - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
-  - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
+  - qwen-3-235b-a22b-fp8
+  - gpt-4o-mini
+  - gpt-4o
+  - qwen-3-1.7b
+  - qwen-3-14b
+  - qwen-3-30b-a3b
+  - qwen-3-32b
+  - deepseek-chat-v3-0324
   - deepseek-chat
   - deepseek-reasoner
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316-with-thinking
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2
-  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr
-  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie
-  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie
-  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560
-  - krikri-annealing-sft-stage2-dpo_min-length-norm-run4
-  - krikri-annealing-sft-stage2-dpo_max-length-norm-run4
-  - krikri-annealing-sft-mixed-run1
-  - krikri-annealing-sft-stage2-run4
-  - krikri-annealing-sft-stage2-dpo_max-epoch-1-run4
-  - krikri-annealing-sft-stage2-dpo_max-run4
-  - aya-expanse-32b
+  - Llama-4-Scout-17B-16E-Instruct
+  - mistral-small-3.1-24b-instruct-2503
   - gemma-2-27b-it
-  - aya-expanse-8b
-  - meltemi-instruct-7b-v1.5-orpo
-  - krikri-annealing-dpo-mixed-run1
-  # - gemma2-9b-it
+  - gemma-3-4b-it
+  - gemma-3-12b-it
+  - gemma-3-27b-it
+  - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
+  - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm
+  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560
+  - krikri-8b-instruct-temp0_35
+  - krikri-8b-instruct-with-thinking-temp0_35
+  - gpt-4o
+  - gpt-4o-mini
   - llama-3.1-70b
   - llama-3.1-8b
-  - command-r
-  - command-rplus
-  - mixtral-8x7b-instruct-v0.1
-  - mistral-7b-instruct-v0.2
-  - claude-3.5-sonnet-v2
+  - aya-expanse-32b
+
+#  - deepseek-chat-v3-0324
+#  - Llama-4-Scout-17B-16E-Instruct
+#  - mistral-small-3.1-24b-instruct-2503
+#  - gemma-3-27b-it
+#  - gemma-3-12b-it
+#  - gemma-3-4b-it
+#  - base_neo_arcee_fusion_round-2_base
+#  # - base_neo_arcee_fusion_round-2_base_with_thinking
+#  # - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-with-thinking
+#  - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
+#  - deepseek-chat
+#  - deepseek-reasoner
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316-with-thinking
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-checkpoint-2316
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-3-with-IF-final-checkpoint
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-2
+#  - krikri-annealing-dpo-max-length-norm-dpo-fixes-length-norm-round-1-low-lr
+#  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.4-dpo_min_0.3dpo_max-length-norm-fixes_on_policy-checkpoint-1560_0.3-dare_tie
+#  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.45-dpo_min_0.55-dare_tie
+#  - krikri-annealing-sft-stage2-merge-dpo-max-length-norm-dpo-fixes-length-norm_0.55-dpo_min_0.45-dare_tie
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes_off_policy-length-norm
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560
+#  - krikri-annealing-sft-stage2-dpo_min-length-norm-run4
+#  - krikri-annealing-sft-stage2-dpo_max-length-norm-run4
+#  - krikri-annealing-sft-mixed-run1
+#  - krikri-annealing-sft-stage2-run4
+#  - krikri-annealing-sft-stage2-dpo_max-epoch-1-run4
+#  - krikri-annealing-sft-stage2-dpo_max-run4
+#  - aya-expanse-32b
+#  - gemma-2-27b-it
+#  - aya-expanse-8b
+#  - meltemi-instruct-7b-v1.5-orpo
+#  - krikri-annealing-dpo-mixed-run1
+#  # - gemma2-9b-it
+#  - llama-3.1-70b
+#  - llama-3.1-8b
+#  - command-r
+#  - command-rplus
+#  - mixtral-8x7b-instruct-v0.1
+#  - mistral-7b-instruct-v0.2
+#  - claude-3.5-sonnet-v2
 
 #  - gpt-4o
 #  - meltemi-annealing-sft-run5
