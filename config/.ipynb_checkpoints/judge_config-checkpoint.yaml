@@ -58,6 +58,9 @@ model_list:
   - llama-3.1-70b
   - llama-3.1-8b
   - aya-expanse-32b
+  - aya-expanse-8b
+  - meltemi-instruct-7b-v1.5-orpo
+  - command-rplus
 
 #  - deepseek-chat-v3-0324
 #  - Llama-4-Scout-17B-16E-Instruct
