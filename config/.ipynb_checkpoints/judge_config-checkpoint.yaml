@@ -32,6 +32,11 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
+  - epoch-1
+  - epoch-2
+  - epoch-3
+  - epoch-4
+  - qwen-3-32b-bf16
   - qwen-3-235b-a22b-fp8
   - gpt-4o-mini
   - gpt-4o

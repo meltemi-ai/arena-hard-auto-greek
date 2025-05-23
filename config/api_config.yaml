@@ -467,3 +467,43 @@ qwen-3-235b-a22b-fp8:
           api_key: token-abc123
     api_type: openai
     parallel: 10
+    
+qwen-3-32b-bf16:
+    model_name: Qwen/Qwen3-32B
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 45
+    
+epoch-1:
+    model_name: epoch-1
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 45
+    
+epoch-2:
+    model_name: epoch-2
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 45
+    
+epoch-3:
+    model_name: epoch-3
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 45
+    
+epoch-4:
+    model_name: epoch-4
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 45
