@@ -474,7 +474,7 @@ qwen-3-32b-bf16:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 45
+    parallel: 40
     
 epoch-1:
     model_name: epoch-1
@@ -482,7 +482,7 @@ epoch-1:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 45
+    parallel: 40
     
 epoch-2:
     model_name: epoch-2
@@ -490,7 +490,7 @@ epoch-2:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 45
+    parallel: 40
     
 epoch-3:
     model_name: epoch-3
@@ -498,7 +498,7 @@ epoch-3:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 45
+    parallel: 40
     
 epoch-4:
     model_name: epoch-4
@@ -506,4 +506,4 @@ epoch-4:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 45
+    parallel: 40
