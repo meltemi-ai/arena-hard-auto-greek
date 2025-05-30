@@ -3,21 +3,22 @@ name: config of answer generation for arena-hard-v0.1
 bench_name: arena-hard-v0.1
 
 # Fore non-thinking models
-# temperature: 0.0
-# max_tokens: 4096
+temperature: 0.0
+max_tokens: 4096
 # For thinking models
-temperature: 0.6
+# temperature: 0.6
 # temperature: 0.35
-max_tokens: 15360
+# max_tokens: 15360
 num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - epoch-1
-  - epoch-2
-  - epoch-3
-  - epoch-4
-  - qwen-3-32b-bf16
+  - krikri-neo-lora-sft-stage-1
+  # - epoch-1
+  # - epoch-2
+  # - epoch-3
+  # - epoch-4
+  # - qwen-3-32b-bf16
 #  - krikri-8b-instruct-temp0_35
   # - krikri-8b-instruct-with-thinking-temp0_35
 #  - qwen-3-1.7b
