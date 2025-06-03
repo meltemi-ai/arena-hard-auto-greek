@@ -523,3 +523,11 @@ qwen-3-sft-epoch-1:
           api_key: token-abc123
     api_type: openai
     parallel: 45
+    
+deepseek-reasoner:
+    model_name: deepseek-reasoner
+    endpoints:
+        - api_base: https://api.deepseek.com
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 20

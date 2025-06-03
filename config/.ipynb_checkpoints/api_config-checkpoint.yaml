@@ -456,7 +456,7 @@ claude-3.7-sonnet:
     model_name: claude-3.7-sonnet
     endpoints:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
-          api_key: tokenreplace
+          api_key: sk-rYLmLviOfGGKL8T_VSNPww
     api_type: openai
     parallel: 14
 
