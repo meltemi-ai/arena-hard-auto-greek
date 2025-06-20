@@ -531,3 +531,11 @@ deepseek-reasoner:
           api_key: tokenreplace
     api_type: openai
     parallel: 20
+    
+krikri-neo1-sft-all:
+    model_name: krikri-neo1-sft-all
+    endpoints:
+        - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
+          api_key: tokenreplace
+    api_type: openai
+    parallel: 30

@@ -88,9 +88,9 @@ def get_answer(
 
             if thinking:
                 try:
-                    think_start = output.find('<think>') + len('<think>')
-                    think_end = output.find('</think>')
-                    output = output[think_start:think_end].strip()
+                    output_start = output.find('<output>') + len('<output>')
+                    output_end = output.find('</output>')
+                    output = output[output_start:output_end].strip()
                 except:
                     output = 'Η απάντηση δεν ακολουθεί σωστό formatting.'
 

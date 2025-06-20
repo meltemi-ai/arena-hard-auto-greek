@@ -8,12 +8,14 @@ max_tokens: 4096
 # For thinking models
 # temperature: 0.6
 # temperature: 0.35
-# max_tokens: 15360
+# max_tokens: 14336
 num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - krikri-neo-lora-sft-stage-1
+  - krikri-neo1-sft-all
+  # - qwen-3-sft-epoch-1
+  # - krikri-neo-lora-sft-stage-1
   # - epoch-1
   # - epoch-2
   # - epoch-3
