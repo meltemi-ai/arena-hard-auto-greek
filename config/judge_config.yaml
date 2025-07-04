@@ -32,6 +32,7 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
+  - krikri-neo1-sft-all
   - qwen-3-sft-epoch-1
   - krikri-neo-lora-sft-stage-1
   - qwen-3-235b-a22b-fp8

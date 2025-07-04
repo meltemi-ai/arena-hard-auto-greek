@@ -458,7 +458,7 @@ claude-3.7-sonnet:
         - api_base: http://ec2-3-19-37-251.us-east-2.compute.amazonaws.com:4000/
           api_key: tokenreplace
     api_type: openai
-    parallel: 14
+    parallel: 15
 
 qwen-3-235b-a22b-fp8:
     model_name: qwen-3-235b-a22b-fp8
@@ -534,6 +534,62 @@ deepseek-reasoner:
     
 krikri-neo1-sft-all:
     model_name: krikri-neo1-sft-all
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+    
+qwen3-greek-thinking-dpo:
+    model_name: qwen3-greek-thinking-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 10
+    
+krikri-neo1-sft-teachers-all:
+    model_name: krikri-neo1-sft-teachers-all
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+    
+krikri-neo1-sft-teachers-all-dpo:
+    model_name: krikri-neo1-sft-teachers-all-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+    
+krikri-neo1-sft-teachers-gemma-r1:
+    model_name: krikri-neo1-sft-teachers-gemma-r1
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+    
+krikri-neo1-sft-teachers-gemma-r1-dpo:
+    model_name: krikri-neo1-sft-teachers-gemma-r1-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+    
+krikri-neo1-sft-teachers-r1:
+    model_name: krikri-neo1-sft-teachers-r1
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+    
+krikri-neo1-sft-teachers-r1-dpo:
+    model_name: krikri-neo1-sft-teachers-r1-dpo
     endpoints:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123

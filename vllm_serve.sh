@@ -53,35 +53,60 @@ BASE_MODEL_PATH="/home/ubuntu/models"
 #MODEL_PATH="google/gemma-3-4b-it"
 #MODEL_NAME="gemma-3-4b-it"
 
-MODEL_PATH="Qwen/Qwen3-32B"
-MODEL_NAME="qwen-3-32b"
-MODEL_PATH="Qwen/Qwen3-30B-A3B"
-MODEL_NAME="qwen-3-30b-a3b"
-MODEL_PATH="Qwen/Qwen3-14B"
-MODEL_NAME="qwen-3-14b"
-MODEL_PATH="Qwen/Qwen3-1.7B"
-MODEL_NAME="qwen-3-1.7b"
-NUM_GPUS=4
-MAX_MODEL_LEN=24576
+# MODEL_PATH="Qwen/Qwen3-32B"
+# MODEL_NAME="qwen-3-32b"
+# MODEL_PATH="Qwen/Qwen3-30B-A3B"
+# MODEL_NAME="qwen-3-30b-a3b"
+# MODEL_PATH="Qwen/Qwen3-14B"
+# MODEL_NAME="qwen-3-14b"
+# MODEL_PATH="Qwen/Qwen3-1.7B"
+# MODEL_NAME="qwen-3-1.7b"
 
-docker run --runtime nvidia --gpus all \
+MODEL_NAME="krikri-neo1-sft-teachers-all"
+# MODEL_NAME="krikri-neo1-sft-teachers-all-dpo"
+# MODEL_NAME="krikri-neo1-sft-teachers-gemma-r1"
+# MODEL_NAME="krikri-neo1-sft-teachers-gemma-r1-dpo"
+# MODEL_NAME="krikri-neo1-sft-teachers-r1"
+# MODEL_NAME="krikri-neo1-sft-teachers-r1-dpo"
+MODEL_PATH="$BASE_MODEL_PATH/$MODEL_NAME"
+NUM_GPUS=4
+MAX_MODEL_LEN=16384
+
+docker run --runtime nvidia --gpus '"device=4,5,6,7"' \
     --shm-size 64g \
-    -v ~/.cache/huggingface:/root/.cache/huggingface \
-    --env "HUGGING_FACE_HUB_TOKEN=hf_key" \
+    -v $MODEL_PATH:/mnt/model/   \
+    --env "TRANSFORMERS_OFFLINE=1" \
+    --env "HF_DATASET_OFFLINE=1" \
     -p 8000:8000 \
     --ipc=host \
-    vllm/vllm-openai:v0.8.4 \
-      --model $MODEL_PATH \
+    vllm/vllm-openai:v0.8.5.post1 \
+      --model /mnt/model/ \
       --served-model-name $MODEL_NAME \
       --tensor-parallel-size $NUM_GPUS \
-      --enable-chunked-prefill False \
-      --enable-reasoning \
-      --reasoning-parser deepseek_r1 \
       --dtype 'bfloat16' \
       --max-model-len $MAX_MODEL_LEN \
-      --gpu_memory_utilization 0.94 \
+      --gpu_memory_utilization 0.9 \
       --api-key token-abc123 \
-      --override-generation-config '{"top_k":20, "top_p": 0.95, "temperature": 0.6}'
+      --override-generation-config '{"top_k": 64, "top_p": 0.95}'
+
+# docker run --runtime nvidia --gpus all \
+#     --shm-size 64g \
+#     -v ~/.cache/huggingface:/root/.cache/huggingface \
+#     --env "HUGGING_FACE_HUB_TOKEN=hf_key" \
+#     -p 8000:8000 \
+#     --ipc=host \
+#     vllm/vllm-openai:v0.8.4 \
+#       --model $MODEL_PATH \
+#       --served-model-name $MODEL_NAME \
+#       --tensor-parallel-size $NUM_GPUS \
+#       --enable-chunked-prefill False \
+#       --enable-reasoning \
+#       --reasoning-parser deepseek_r1 \
+#       --dtype 'bfloat16' \
+#       --max-model-len $MAX_MODEL_LEN \
+#       --gpu_memory_utilization 0.94 \
+#       --api-key token-abc123 \
+#       --override-generation-config '{"top_k":20, "top_p": 0.95, "temperature": 0.6}'
 
 
 #vllm serve $MODEL_PATH \
