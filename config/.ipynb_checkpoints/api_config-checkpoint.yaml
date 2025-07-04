@@ -546,7 +546,7 @@ qwen3-greek-thinking-dpo:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 10
+    parallel: 12
     
 krikri-neo1-sft-teachers-all:
     model_name: krikri-neo1-sft-teachers-all

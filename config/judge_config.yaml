@@ -32,6 +32,7 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
+  - qwen3-greek-thinking-dpo
   - krikri-neo1-sft-teachers-all
   - krikri-neo1-sft-teachers-all-dpo
   - krikri-neo1-sft-teachers-gemma-r1
