@@ -554,7 +554,7 @@ krikri-neo1-sft-teachers-all:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 60
     
 krikri-neo1-sft-teachers-all-dpo:
     model_name: krikri-neo1-sft-teachers-all-dpo
@@ -562,7 +562,7 @@ krikri-neo1-sft-teachers-all-dpo:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 60
     
 krikri-neo1-sft-teachers-gemma-r1:
     model_name: krikri-neo1-sft-teachers-gemma-r1
@@ -570,7 +570,7 @@ krikri-neo1-sft-teachers-gemma-r1:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 60
     
 krikri-neo1-sft-teachers-gemma-r1-dpo:
     model_name: krikri-neo1-sft-teachers-gemma-r1-dpo
@@ -578,7 +578,7 @@ krikri-neo1-sft-teachers-gemma-r1-dpo:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 60
     
 krikri-neo1-sft-teachers-r1:
     model_name: krikri-neo1-sft-teachers-r1
@@ -586,7 +586,7 @@ krikri-neo1-sft-teachers-r1:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 60
     
 krikri-neo1-sft-teachers-r1-dpo:
     model_name: krikri-neo1-sft-teachers-r1-dpo
@@ -594,4 +594,4 @@ krikri-neo1-sft-teachers-r1-dpo:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 60
