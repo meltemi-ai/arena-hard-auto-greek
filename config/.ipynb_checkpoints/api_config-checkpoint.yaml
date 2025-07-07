@@ -595,3 +595,51 @@ krikri-neo1-sft-teachers-r1-dpo:
           api_key: token-abc123
     api_type: openai
     parallel: 60
+    
+krikri-merge-linear-40-latest_60-teachers-gemma-r1-dpo:
+    model_name: krikri-merge-linear-40-latest_60-teachers-gemma-r1-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    
+krikri-merge-linear-50-latest_50-teachers-gemma-r1-dpo:
+    model_name: krikri-merge-linear-50-latest_50-teachers-gemma-r1-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    
+krikri-merge-linear-60-latest_40-teachers-gemma-r1-dpo:
+    model_name: krikri-merge-linear-60-latest_40-teachers-gemma-r1-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    
+krikri-merge-slerp_balanced-base-latest_teachers-gemma-r1-dpo:
+    model_name: krikri-merge-slerp_balanced-base-latest_teachers-gemma-r1-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    
+krikri-merge-slerp_balanced-base-teachers-gemma-r1-dpo_latest:
+    model_name: krikri-merge-slerp_balanced-base-teachers-gemma-r1-dpo_latest
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    
+qwen3-32b-merge-slerp_greek-thinking_original:
+    model_name: qwen3-32b-merge-slerp_greek-thinking_original
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 12
