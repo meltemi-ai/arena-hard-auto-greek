@@ -72,14 +72,14 @@ MODEL_PATH="$BASE_MODEL_PATH/$MODEL_NAME"
 NUM_GPUS=4
 MAX_MODEL_LEN=16384
 
-docker run --runtime nvidia --gpus '"device=4,5,6,7"' \
+docker run --runtime nvidia --gpus '"device=0,1,2,3"' \
     --shm-size 64g \
     -v $MODEL_PATH:/mnt/model/   \
     --env "TRANSFORMERS_OFFLINE=1" \
     --env "HF_DATASET_OFFLINE=1" \
     -p 8000:8000 \
     --ipc=host \
-    vllm/vllm-openai:v0.8.5.post1 \
+    vllm/vllm-openai:v0.8.4 \
       --model /mnt/model/ \
       --served-model-name $MODEL_NAME \
       --tensor-parallel-size $NUM_GPUS \
@@ -87,7 +87,8 @@ docker run --runtime nvidia --gpus '"device=4,5,6,7"' \
       --max-model-len $MAX_MODEL_LEN \
       --gpu_memory_utilization 0.9 \
       --api-key token-abc123 \
-      --override-generation-config '{"top_k": 64, "top_p": 0.95}'
+      --override-generation-config '{"top_k": 64, "top_p": 0.95, "repetition_penalty": 1.05}' \
+      --disable-log-requests
 
 # docker run --runtime nvidia --gpus all \
 #     --shm-size 64g \

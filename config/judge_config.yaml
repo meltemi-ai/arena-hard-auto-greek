@@ -37,7 +37,7 @@ model_list:
   - krikri-merge-linear-60-latest_40-teachers-gemma-r1-dpo
   - krikri-merge-slerp_balanced-base-latest_teachers-gemma-r1-dpo
   - krikri-merge-slerp_balanced-base-teachers-gemma-r1-dpo_latest
-  - qwen3-32b-merge-slerp_greek-thinking_original
+  # - qwen3-32b-merge-slerp_greek-thinking_original
   - qwen3-greek-thinking-dpo
   - krikri-neo1-sft-teachers-all
   - krikri-neo1-sft-teachers-all-dpo
