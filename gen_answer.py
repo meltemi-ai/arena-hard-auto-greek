@@ -94,7 +94,7 @@ def get_answer(
                 except:
                     output = 'Η απάντηση δεν ακολουθεί σωστό formatting.'
 
-            conv.append({"role": "assistant", "content": output})
+            conv.append({"role": "assistant", "content": output.strip()})
 
             turns.append({"content": output})
         choices.append({"index": i, "turns": turns})

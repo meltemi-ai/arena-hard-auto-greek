@@ -32,22 +32,22 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
+  - krikri-merge-model_stock-latest_teachers-gemma-r1-dpo
+  - krikri-neo1-merge-linear-sft-think_50-el-en-mix-1.5ep_25-el_25-en
+  - krikri-neo1-sft-think_en_el_mix-epoch-1.5
   - krikri-merge-linear-40-latest_60-teachers-gemma-r1-dpo
   - krikri-merge-linear-50-latest_50-teachers-gemma-r1-dpo
   - krikri-merge-linear-60-latest_40-teachers-gemma-r1-dpo
-  - krikri-merge-slerp_balanced-base-latest_teachers-gemma-r1-dpo
-  - krikri-merge-slerp_balanced-base-teachers-gemma-r1-dpo_latest
   # - qwen3-32b-merge-slerp_greek-thinking_original
   - qwen3-greek-thinking-dpo
-  - krikri-neo1-sft-teachers-all
+  # - krikri-neo1-sft-teachers-all
   - krikri-neo1-sft-teachers-all-dpo
-  - krikri-neo1-sft-teachers-gemma-r1
+  # - krikri-neo1-sft-teachers-gemma-r1
   - krikri-neo1-sft-teachers-gemma-r1-dpo
-  - krikri-neo1-sft-teachers-r1
+  # - krikri-neo1-sft-teachers-r1
   - krikri-neo1-sft-teachers-r1-dpo
   - krikri-neo1-sft-all
   - qwen-3-sft-epoch-1
-  - krikri-neo-lora-sft-stage-1
   - qwen-3-235b-a22b-fp8
   - gpt-4o-mini
   - gpt-4o
@@ -64,11 +64,8 @@ model_list:
   - gemma-3-4b-it
   - gemma-3-12b-it
   - gemma-3-27b-it
-  - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
   - krikri-annealing-sft-stage2-dpo_max-length-norm-dpo-fixes-length-norm
   - krikri-annealing-sft-stage2-dpo_max-length-norm-fixes_on_policy-checkpoint-1560
-  - krikri-8b-instruct-temp0_35
-  - krikri-8b-instruct-with-thinking-temp0_35
   - gpt-4o
   - gpt-4o-mini
   - llama-3.1-70b
@@ -77,6 +74,13 @@ model_list:
   - aya-expanse-8b
   - meltemi-instruct-7b-v1.5-orpo
   - command-rplus
+
+  # - krikri-neo-lora-sft-stage-1
+  # - krikri-annealing-dpo_max-length-norm-fixes-checkpoint-1560-with-thinking
+  # - krikri-merge-slerp_balanced-base-latest_teachers-gemma-r1-dpo
+  # - krikri-merge-slerp_balanced-base-teachers-gemma-r1-dpo_latest
+  # - krikri-8b-instruct-temp0_35
+  # - krikri-8b-instruct-with-thinking-temp0_35
 
 #  - deepseek-chat-v3-0324
 #  - Llama-4-Scout-17B-16E-Instruct
