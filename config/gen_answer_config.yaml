@@ -14,7 +14,7 @@ num_choices: 1
 # a list of model to generate answers
 model_list:
   # - krikri-merge-model_stock-latest_teachers-gemma-r1-dpo # DONE
-  - krikri-neo1-merge-linear-sft-think_50-el-en-mix-1.5ep_25-el_25-en
+  # - krikri-neo1-merge-linear-sft-think_50-el-en-mix-1.5ep_25-el_25-en # DONE
   # - krikri-neo1-sft-think_en_el_mix-epoch-1.5 # DONE
   # - krikri-merge-linear-40-latest_60-teachers-gemma-r1-dpo # DONE
   # - krikri-merge-linear-50-latest_50-teachers-gemma-r1-dpo # DONE
