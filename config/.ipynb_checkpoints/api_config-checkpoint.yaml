@@ -669,3 +669,67 @@ krikri-neo1-merge-linear-sft-think_50-el-en-mix-1.5ep_25-el_25-en:
     api_type: openai
     parallel: 45
     system_prompt: "Είσαι το Κρικρί, ένα κορυφαίο σύστημα Τεχνητής Νοημοσύνης ικανό να διερευνά ερωτήματα μέσω συστηματικής και εκτενούς διαδικασίας σκέψης προτού παρέχει ακριβείς και ορθές απαντήσεις.\n\nΓια κάθε ερώτημα ανάπτυξε πρώτα τη σκέψη σου εντός των <think> </think> tags πριν δώσεις τις τελικές σωστές και ακριβείς απαντήσεις σου.\n\nΗ διαδικασία σκέψης σου ακολουθεί έναν συστηματικό κύκλο με λεπτομερή βήματα όπως:\n\n- Κατανόηση του προβλήματος και διαχωρισμό σε απλούστερα βήματα\n- Ανάλυση και διερεύνηση εναλλακτικών\n- Σύνοψη ευρημάτων και καταιγισμός ιδεών\n- Ανάκληση προηγούμενων γνώσεων και σχετικών παραδειγμάτων\n- Επαλήθευση ακρίβειας και διόρθωση σφαλμάτων\n- Αναστοχασμό και επανεξέταση προηγούμενων βημάτων\n\nΩστόσο, πρέπει να προσαρμόζεις την προσέγγισή σου με βάση τις απαιτήσεις του κάθε συγκεκριμένου προβλήματος αντί να ακολουθείς άκαμπτα μια φόρμουλα. Διαχώρισε κάθε βήμα της σκέψης σου με 2 κενές γραμμές.\n\nΗ γενική δομή της απάντησής σου είναι η εξής:\n<think>\nΕδώ γράψε την διαδικασία σκέψης και τον εσωτερικό μονόλογό σου.\n</think>\n\nΕδώ γράψε την τελική απάντηση σου που θα δει ο/η χρήστης/-τρια ΣΤΗΝ ΙΔΙΑ ΓΛΩΣΣΑ ΜΕ ΑΥΤΗ ΠΟΥ ΧΡΗΣΙΜΟΠΟΙΕΙ, εκτός αν δοθούν διαφορετικές οδηγίες."
+
+krikri-v1.5-self-dpo-checkpoint-240:
+    model_name: krikri-v1.5-self-dpo-checkpoint-240
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    
+krikri-v1.5-self-dpo-checkpoint-384:
+    model_name: krikri-v1.5-self-dpo-checkpoint-384
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+    
+krikri-v1.5-self-dpo-checkpoint-432:
+    model_name: krikri-v1.5-self-dpo-checkpoint-432
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+
+krikri-v1.5-self-dpo-checkpoint-472:
+    model_name: krikri-v1.5-self-dpo-checkpoint-472
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 60
+
+mistral-small-3.2-24b-instruct-2506:
+    model_name: mistral-small-3.2-24b-instruct-2506
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 120
+
+qwen3-32b-merge-linear_40-original_60-greek-think:
+    model_name: qwen3-32b-merge-linear_40-original_60-greek-think
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+
+qwen3-32b-merge-linear_50-original_50-greek-think:
+    model_name: qwen3-32b-merge-linear_50-original_50-greek-think
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
+
+qwen3-32b-merge-linear_60-original_40-greek-think:
+    model_name: qwen3-32b-merge-linear_60-original_40-greek-think
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 30
