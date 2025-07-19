@@ -37,9 +37,9 @@ model_list:
   - krikri-v1.5-self-dpo-checkpoint-384
   - krikri-v1.5-self-dpo-checkpoint-432
   - krikri-v1.5-self-dpo-checkpoint-472
-  # - qwen3-32b-merge-linear_40-original_60-greek-think
-  # - qwen3-32b-merge-linear_50-original_50-greek-think
-  # - qwen3-32b-merge-linear_60-original_40-greek-think
+  - qwen3-32b-merge-linear_40-original_60-greek-think
+  - qwen3-32b-merge-linear_50-original_50-greek-think
+  - qwen3-32b-merge-linear_60-original_40-greek-think
   # - krikri-merge-model_stock-latest_teachers-gemma-r1-dpo
   # - krikri-neo1-merge-linear-sft-think_50-el-en-mix-1.5ep_25-el_25-en
   - krikri-neo1-sft-think_en_el_mix-epoch-1.5

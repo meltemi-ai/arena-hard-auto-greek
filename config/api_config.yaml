@@ -724,7 +724,7 @@ qwen3-32b-merge-linear_50-original_50-greek-think:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 32
 
 qwen3-32b-merge-linear_60-original_40-greek-think:
     model_name: qwen3-32b-merge-linear_60-original_40-greek-think
@@ -732,4 +732,4 @@ qwen3-32b-merge-linear_60-original_40-greek-think:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 30
+    parallel: 32
