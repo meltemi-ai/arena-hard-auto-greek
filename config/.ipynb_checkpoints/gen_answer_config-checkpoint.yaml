@@ -3,22 +3,22 @@ name: config of answer generation for arena-hard-v0.1
 bench_name: arena-hard-v0.1
 
 # Fore non-thinking models
-# temperature: 0.0
-# max_tokens: 4096
+temperature: 0.0
+max_tokens: 4096
 # For thinking models
-temperature: 0.6
+# temperature: 0.6
 # temperature: 0.35
-max_tokens: 24576
+# max_tokens: 24576
 num_choices: 1
 
 # a list of model to generate answers
 model_list:
   # - qwen3-32b-merge-linear_40-original_60-greek-think # DONE
   # - qwen3-32b-merge-linear_50-original_50-greek-think # DONE
-  - qwen3-32b-merge-linear_60-original_40-greek-think # DONE
+  # - qwen3-32b-merge-linear_60-original_40-greek-think # DONE
   # - mistral-small-3.2-24b-instruct-2506 # DONE
   # - krikri-v1.5-self-dpo-checkpoint-240 # DONE
-  # - krikri-v1.5-self-dpo-checkpoint-472
+  - krikri-v1.5-self-dpo-checkpoint-472
   # - krikri-v1.5-self-dpo-checkpoint-384 # DONE
   # - krikri-v1.5-self-dpo-checkpoint-432 # DONE
   # - krikri-merge-model_stock-latest_teachers-gemma-r1-dpo # DONE

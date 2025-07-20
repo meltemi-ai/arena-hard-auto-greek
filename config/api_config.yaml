@@ -700,7 +700,7 @@ krikri-v1.5-self-dpo-checkpoint-472:
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
-    parallel: 60
+    parallel: 140
 
 mistral-small-3.2-24b-instruct-2506:
     model_name: mistral-small-3.2-24b-instruct-2506
