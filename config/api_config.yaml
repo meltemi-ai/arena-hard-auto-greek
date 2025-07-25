@@ -733,3 +733,19 @@ qwen3-32b-merge-linear_60-original_40-greek-think:
           api_key: token-abc123
     api_type: openai
     parallel: 32
+
+krikri-merge-linear-v1.5-self-dpo-384_merged-50-latest-50-teachers-gemma-r1-dpo:
+    model_name: krikri-merge-linear-v1.5-self-dpo-384_merged-50-latest-50-teachers-gemma-r1-dpo
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 140
+
+qwen-3-235b-a22b-instruct-2507-fp8:
+    model_name: qwen-3-235b-a22b-instruct-2507-fp8
+    endpoints:
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 10

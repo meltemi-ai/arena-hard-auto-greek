@@ -32,6 +32,7 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
+  - krikri-merge-linear-v1.5-self-dpo-384_merged-50-latest-50-teachers-gemma-r1-dpo
   - mistral-small-3.2-24b-instruct-2506
   - krikri-v1.5-self-dpo-checkpoint-240
   - krikri-v1.5-self-dpo-checkpoint-384
